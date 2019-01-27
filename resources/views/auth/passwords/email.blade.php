@@ -2,10 +2,14 @@
 @extends('layouts.layout-home')
 
 @section ('content')
-       
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+
+<section class="blog_area p_120">
+            <div class="container">
+                <div class="row">   
+                <hr class="type_1">               
+                    <div class="col-lg-8 col-md-offset-1">
+
+                <div class="blog_right_sidebar">
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
@@ -46,4 +50,10 @@
         </div>
     </div>
 </div>
+
+ </div>
+                      
+                </div>
+            </div>
+        </section>
 @endsection

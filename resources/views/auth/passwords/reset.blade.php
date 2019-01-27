@@ -2,6 +2,14 @@
 @extends('layouts.layout-home')
 
 @section ('content')
+
+<section class="blog_area p_120">
+            <div class="container">
+                <div class="row">   
+                <hr class="type_1">               
+                    <div class="col-lg-8 col-md-offset-1">
+
+                <div class="blog_right_sidebar">
        
 <div class="container">
     <div class="row justify-content-center">
@@ -64,4 +72,9 @@
         </div>
     </div>
 </div>
+ </div>
+                      
+                </div>
+            </div>
+        </section>
 @endsection

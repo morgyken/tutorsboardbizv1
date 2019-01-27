@@ -7,6 +7,7 @@
         <link rel="icon" href="{{ URL::asset('opium/img/favicon.png')}}" type="image/png">
         <title>Tutorsboardbiz</title>
         <!-- Bootstrap CSS -->
+ 
         <link rel="stylesheet" href="{{ URL::asset('opium/css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{ URL::asset('opium/vendors/linericon/style.css')}}">
         <link rel="stylesheet" href="{{ URL::asset('opium/css/font-awesome.min.css')}}">
@@ -51,6 +52,28 @@
         height: 55px;
         background-image: url(image/type_1.png);
         background-repeat: no-repeat;
+        }
+        .btn-file {
+          position: relative;
+          overflow: hidden;
+        }
+        .btn-file input[type=file] {
+          position: absolute;
+          top: 0;
+          right: 0;
+          min-width: 100%;
+          min-height: 100%;
+          font-size: 100px;
+          text-align: right;
+          filter: alpha(opacity=0);
+          opacity: 0;
+          background: red;
+          cursor: inherit;
+          display: block;
+        }
+        input[readonly] {
+          background-color: white !important;
+          cursor: text !important;
         }
     </style>
     <body>
@@ -134,6 +157,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        
         <script src="{{ URL::asset('opium/js/jquery-3.2.1.min.js')}}"></script>
         <script src="{{ URL::asset('opium/js/popper.js')}}"></script>
         <script src="{{ URL::asset('opium/js/bootstrap.min.js')}}"></script>
@@ -148,7 +172,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{{ URL::asset('opium/js/mail-script.js ')}}"></script>
         <script src="{{ URL::asset('opium/js/theme.js ')}}"></script>
         <script src="{{ URL::asset('uikit/uikit.min.js')}}"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
           <!-- Autocomplete Javascript -->
         <script src="{{ URL::asset('uikit/components/autocomplete.js')}}"></script>    
 

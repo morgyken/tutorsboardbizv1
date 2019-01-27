@@ -33,6 +33,8 @@ Route::prefix('admin')->group(function (){
 
 	Route::get('/logout', 'Auth\AdminLoginController@logout')->name ('admin.logout');
 
+	//Route List Files 
+	
 	Route::post('/password/email', 'Auth\AdminForgotPasswordController@sendResetLinkEmail')
 
 	->name('admin.password.email');
@@ -48,4 +50,3 @@ Route::prefix('admin')->group(function (){
 	->name('admin.password.reset');
 
 });
-

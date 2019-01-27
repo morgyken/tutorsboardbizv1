@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Illuminate\Http\SendsPasswordResetEmails;
+use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 use Passowrd;
 
-class AdminForgotPasswordController extends Controller
+class AdminForgotPasswordControllers extends Controller
 {
      /*
     |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ class AdminForgotPasswordController extends Controller
 
      protected function brocker()
     {
-    	return Password::brocker'admins');
+    	return Password::brocker('admins');
     }
 
 
@@ -45,12 +45,4 @@ class AdminForgotPasswordController extends Controller
     {
     	return view ('auth.passwords.admin-email');
     }
-
-
-    public function  sendResetLinkEmail()
-    {
-    	return true;
-    }
-
-   
 }

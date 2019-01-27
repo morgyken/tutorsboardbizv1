@@ -137,19 +137,19 @@
                       </div>
                       
 
-                    <div class="form-group">
-                         
-                    <div class="form-group">        
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                      </div>
-                      <div class="custom-file">
-                        <input type="file" name="file[]" multiple id="file-input" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose files</label>
-                      </div>
+                    <div class="form-group">       
+                
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <span class="btn btn-primary btn-file">
+                                    Browse&hellip; <input type="file" name='file[]' class="form-control"  multiple>
+                                </span>
+                            </span>
+                            <input type="text" class="form-control" readonly>
+                        </div>
                     </div>
-                    </div>      
+                                
+                              
                     <div class="form-group">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                     <button type="submit" class="btn btn-success">Continue</button>
@@ -165,7 +165,30 @@
           </div>
 
                                              
-                                
+        <script type="text/javascript">
+            
+            $(document).on('change', '.btn-file :file', function() {
+              var input = $(this),
+                  numFiles = input.get(0).files ? input.get(0).files.length : 1,
+                  label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+              input.trigger('fileselect', [numFiles, label]);
+            });
+
+            $(document).ready( function() {
+                $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+                    
+                    var input = $(this).parents('.input-group').find(':text'),
+                        log = numFiles > 1 ? numFiles + ' files selected' : label;
+                    
+                    if( input.length ) {
+                        input.val(log);
+                    } else {
+                        if( log ) alert(log);
+                    }
+                    
+                });
+            });
+        </script>                   
 
        
         <!--================Blog Area =================-->

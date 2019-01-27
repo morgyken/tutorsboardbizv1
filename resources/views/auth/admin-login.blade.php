@@ -17,7 +17,7 @@
 
                 <div class="blog_right_sidebar">
                             
-                              <div class="card">
+                <div class="card">
                 <div class="card-header">{{ __('Admin Login') }}</div>
 
                 <div class="card-body">
@@ -70,7 +70,7 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn btn-link" href="{{ route('admin.password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                             </div>
