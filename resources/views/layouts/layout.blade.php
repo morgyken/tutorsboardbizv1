@@ -15,6 +15,9 @@
         <link rel="stylesheet" href="{{ URL::asset('opium/vendors/nice-select/css/nice-select.css')}}">
         <link rel="stylesheet" href="{{ URL::asset('opium/vendors/animate-css/animate.css')}}">
         <link rel="stylesheet" href="{{ URL::asset('opium/vendors/jquery-ui/jquery-ui.css')}}">
+        <!--UiKit Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.xx.x/css/uikit.min.css" />
+        <!--End Uikit -->
         <!-- main css -->
         <link rel="stylesheet" href="{{ URL::asset('opium/css/style.css')}}">
         <link rel="stylesheet" href="{{ URL::asset('opium/css/responsive.css')}}">
@@ -142,6 +145,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{{ URL::asset('opium/js/jquery.ajaxchimp.min.js ')}}"></script>
         <script src="{{ URL::asset('opium/js/mail-script.js ')}}"></script>
         <script src="{{ URL::asset('opium/js/theme.js ')}}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.xx.x/js/uikit.min.js"></script>
+        <!-- Include JS file. -->
  <!--================Blog Area =================-->
         
        @include('part.footer')

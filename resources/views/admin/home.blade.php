@@ -8,7 +8,7 @@
                 <div class="row">   
                 <hr class="type_1">               
                     <div class="col-lg-3">
-
+                        
                         <div class="blog_right_sidebar">
                             
                             <aside class="single_sidebar_widget author_widget">
@@ -64,10 +64,16 @@
                     </div>
                       <div class="col-lg-9">
                         <div class="blog_left_sidebar">
-                            <article class="blog_style1"; style="text-align: center;" ">
+                            <article class="blog_style1"; style="text-align: center; ">
                                 
                                 <a class="logo" href="#"><img src="{{ URL::asset('opium/img/logo.png ')}}" alt=""></a>
                             </article>
+
+                             <article class="blog_style1"; style="text-align: center;">
+                               
+                               <a href="#" class="btn btn-secondary btn-rounded mb-4" data-toggle="modal" data-target="#frameModalBottom">Ask Question Now!</a>
+                            </article>
+                            
                             <article class="blog_style1";">
                                 
                                 <div class="blog_text">
@@ -97,6 +103,71 @@
                 </div>
             </div>
         </section>
+
+
+        <div class="modal fade bottom" id="frameModalBottom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <!-- Add class .modal-frame and then add class .modal-bottom (or other classes from list above) to set a position to the modal -->
+            <div class="modal-dialog modal-frame modal-bottom col-xl-10" role="document">
+
+
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-header ">
+                        <h4 class="modal-title" id="exampleModalLongTitle"> Post your Question</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+
+
+                  <div class="row d-flex justify-content-center align-items-center">
+
+                  
+                    <div class="col-xl-12">
+                        <form method="post" action=""  enctype="multipart/form-data">
+
+                        <div class="form-group">
+                          <input type="" placeholder="Topic" class="form-control"   name="topic">
+                        </div>
+                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <div class="form-group">
+                          @include('part.editor')
+                      </div>
+                      
+
+                    <div class="form-group">
+                         
+                    <div class="form-group">        
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                      </div>
+                      <div class="custom-file">
+                        <input type="file" name="file[]" multiple id="file-input" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose files</label>
+                      </div>
+                    </div>
+                    </div>      
+                    <div class="form-group">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success">Continue</button>
+                </div>
+                    </form>
+
+                    </div>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                                             
+                                
+
+       
         <!--================Blog Area =================-->
         
         @endsection 

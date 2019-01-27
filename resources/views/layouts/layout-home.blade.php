@@ -15,9 +15,18 @@
         <link rel="stylesheet" href="{{ URL::asset('opium/vendors/nice-select/css/nice-select.css')}}">
         <link rel="stylesheet" href="{{ URL::asset('opium/vendors/animate-css/animate.css')}}">
         <link rel="stylesheet" href="{{ URL::asset('opium/vendors/jquery-ui/jquery-ui.css')}}">
+        <!--UiKit Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.xx.x/css/uikit.min.css" />
+        <!--End Uikit -->
         <!-- main css -->
         <link rel="stylesheet" href="{{ URL::asset('opium/css/style.css')}}">
         <link rel="stylesheet" href="{{ URL::asset('opium/css/responsive.css')}}">
+            <!-- Include Editor style. -->
+        <link href='https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
+        <link href='https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_style.min.css' rel='stylesheet' type='text/css' />
+        
+
+
     </head>
     <style type="text/css">
                 
@@ -138,6 +147,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{{ URL::asset('opium/js/jquery.ajaxchimp.min.js ')}}"></script>
         <script src="{{ URL::asset('opium/js/mail-script.js ')}}"></script>
         <script src="{{ URL::asset('opium/js/theme.js ')}}"></script>
+        <script src="{{ URL::asset('uikit/uikit.min.js')}}"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+          <!-- Autocomplete Javascript -->
+        <script src="{{ URL::asset('uikit/components/autocomplete.js')}}"></script>    
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.xx.x/js/uikit.min.js"></script>
+        <!-- Include JS file. -->
+        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/js/froala_editor.min.js'></script>
+
+        <!-- Uikit included -->
+
  <!--================Blog Area =================-->
     
     </body>
